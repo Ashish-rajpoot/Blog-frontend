@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-toastr/toastr';
+
+:root {
+    --primary-color: #026467;
+    --secondary-color: #E5F5EA;
+    --body-text-color: #596392;
+    --navbar-footer-color: #f9f9f9;
+
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: var(--body-text-color);
+}
+
+.site-logo {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.bg-theme-1 {
+    background-color: var(--primary-color);
+}
+
+.bg-theme-2 {
+    background-color: var(--secondary-color);
+}
+
+.color-white {
+    color: var(--navbar-footer-color);
+}
+
+.nav-link {
+    color: var(--primary-color);
+}
+
+/* .card {
+    border: none;
+    box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
+    border-radius: 15px;
+} */
+
+.shadow-effect {
+    border: none;
+    box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
+    border-radius: 15px;
+}
+
+.btn-subs {
+    height: 60px;
+    padding-left: 20px;
+    font-size: 13px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* .btn-home{
+    width: auto !important;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--navbar-footer-color);
+} */
+
+#btn-home {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: auto !important;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--navbar-footer-color);
+}

@@ -1,0 +1,10 @@
+h1{
+    color: var(--primary-color);
+}
+
+.btn-comment{
+    background-color: var(--primary-color);
+}
+.card{
+    background-color: var(--secondary-color);
+}

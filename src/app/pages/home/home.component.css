@@ -1,0 +1,10 @@
+.feature-section{
+    padding-right: 130px;
+    padding-bottom: 30px;
+    padding-left: 130px;
+    padding-top: 30px;
+   background-color: var(--primary-color);
+   /* min-height: 50vh; */
+
+}
+

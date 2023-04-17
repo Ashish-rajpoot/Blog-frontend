@@ -1,0 +1,22 @@
+<section class="category-component">
+    <div class=" bg-theme-1">
+        <div class="container">
+            <div class="row">
+                <div class="mb-4 mt-4">
+                    <h1 class="text-white" *ngIf="isCategoryAvailable">{{category}}</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, deleniti?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3 shadow-effect pb-3 pt-3 bg-theme-2" >
+        <div class="row">
+            <div class="col-md-3" *ngFor="let item of postDataByCategoryId">
+                <app-post-card [postData]="item" ></app-post-card>
+            </div>
+
+        </div>
+    </div>
+
+</section>

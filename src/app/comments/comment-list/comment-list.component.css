@@ -1,0 +1,16 @@
+.card h3{
+    color: var(--primary-color);
+}
+
+.card-body{
+    background-color: rgb(244, 240, 240)
+}
+
+.card-body h5{
+    color: var(--body-text-color);
+}
+.reply-btn a{
+    color: var(--primary-color);
+    margin-right: 50px;
+    text-decoration: none;
+}

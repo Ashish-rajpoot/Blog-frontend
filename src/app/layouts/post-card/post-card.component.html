@@ -1,0 +1,39 @@
+<!-- <div class="row"> -->
+    <div *ngIf="postData" [routerLink]="['/post',postData.categoryId]">
+        <div class="card m-1" style="border: none; width: auto; height: auto;" >
+            <img src="{{postData.postImgPath}}" alt="postImage" class="img-thumbnail rounded" style="height: 300px;">
+            {{postData.id}}
+            <div class="card-body ">
+                <small class="bg-light text-danger text-center">Design</small>
+                &nbsp;&nbsp;
+                <small class="bg-light text-success text-center" *ngIf="postData.isFeatured">Featured</small>
+                &nbsp;&nbsp;
+                <small class="bg-light text-info text-center">View - {{postData.views}}</small>
+
+                <h5 class="mt-1">{{postData.title}}</h5>
+                <p class="rounded">
+                    {{postData.excerpt}}
+                </p>
+                <small class="bg-light text-warning">LAST UPDATED : {{postData.createdAt.toMillis() | date}}</small>
+            </div>
+        </div>
+    </div>
+    <!-- <div *ngFor="let item of postsData">
+        <div class="card m-1" style="border: none; width: auto; height: auto;" >
+            <img src="{{item.postImgPath}}" alt="postImage" class="img-thumbnail rounded" style="height: 300px;">
+            <div class="card-body ">
+                <small class="bg-light text-danger text-center">Design</small>
+                &nbsp;&nbsp;&nbsp;
+                <small class="bg-light text-success text-center">Featured {{item.isFeatured}}</small>
+                &nbsp;&nbsp;&nbsp;
+                <small class="bg-light text-info text-center">View - {{item.views}}</small>
+
+                <h5 class="mt-1"></h5>
+                <p class="rounded">
+                    {{item.excerpt}}
+                </p>
+                <small class="bg-light text-warning">LAST UPDATED : 25-2-2023</small>
+            </div>
+        </div>
+    </div> -->
+<!-- </div> -->

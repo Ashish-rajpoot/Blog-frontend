@@ -1,0 +1,30 @@
+<section class="feature-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-white">Featured Posts
+                </h2>
+                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, adipisci.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let item of postData">
+                <app-post-card [postData]="item"></app-post-card>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Latest Post</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, nemo.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-3" *ngFor="let posts of latestData">
+                <app-post-card [postData]="posts"></app-post-card>
+            </div>
+        </div>
+    </div>
+</section>
