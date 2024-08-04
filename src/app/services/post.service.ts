@@ -17,7 +17,6 @@ export class PostService {
   loadPostsFeaturedData(): Observable<any> {
     const postsRef = collection(this.firestore, 'post');
     const q = query(postsRef, where('isFeatured', '==', true), limit(4));
-    console.log(q);
     return collectionData(q, { idField: 'categoryId' });
   }
   loadPostsDataByCategory(categoryId: string): Observable<any> {
