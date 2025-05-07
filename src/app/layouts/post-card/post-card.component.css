@@ -1,28 +1,55 @@
-.card  {
-    cursor: pointer;
-    border: none;
-    width: min(250px, auto);
-    height:  min(250px, auto);
+@import "tailwindcss";
+
+.card {
+  cursor: pointer;
+  border: none;
+  /* min-width: 350px; */
+  min-height: 450px !important;
+  background-color: rgb(243, 243, 244);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.img{
-overflow: hidden;
+.img {
+  overflow: hidden;
+  max-height: 180px;
+  min-height: 180px;
 }
 
+.img-thumbnail {
+  object-fit: fill;
+  object-position: center -100px;
+  height: 100%;
+  width: 100%;
+}
 
 .rounded {
-    height: 93px;
-    overflow: hidden;
-    content: "show more";
+  height: 93px;
+  overflow: hidden;
+  content: "show more";
 }
 
 .rounded a {
-    text-decoration: none;
+  text-decoration: none;
 }
-img{
-    transition: all 0.5s ease-in-out;
+img {
+  transition: all 0.5s ease-in-out;
 }
 
 .card:hover img {
   transform: scale(1.2);
   /* transition: all 0.5s ease-in-out; */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 300px;
+  }
+  .img {
+  }
+  .rounded {
+    height: 70px;
+  }
 }
